@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="mx.ita.securityhome.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="mx.ita.securityhome.ui.gallery.GalleryFragment"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="mx.ita.securityhome.ui.slideshow.SlideshowFragment"
+        android:label="Ayuda"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <activity
+        android:id="@+id/puntuarApp"
+        android:name="mx.ita.securityhome.Calificanos"
+        android:label="Puntuar App"
+        tools:layout="@layout/activity_calificanos" />
+    <activity
+        android:id="@+id/enviarBugs"
+        android:name="mx.ita.securityhome.Reportebug"
+        android:label="Reportar un bug"
+        tools:layout="@layout/activity_reportebug"/>
+
+    <activity
+        android:id="@+id/cerrarsesion"
+        android:name="mx.ita.securityhome.cerrarSesion"
+        android:label="Cerrar sesión"
+        tools:layout="@layout/activity_cerrar_sesion" />
+
+</navigation>
