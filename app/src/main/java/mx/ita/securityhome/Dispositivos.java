@@ -66,7 +66,7 @@ public class Dispositivos extends AppCompatActivity {
             public void onClick(View v) {
                 if(!capturar_ip.getText().toString().equals("")){
                     try{
-                        new actualizar().execute(); //tarea asíncrona EDDD
+                        new actualizar().execute(); //tarea asíncrona
                     }catch (Exception e){
                         Toast.makeText(Dispositivos.this,"OFFLINE", Toast.LENGTH_SHORT);
                     }
